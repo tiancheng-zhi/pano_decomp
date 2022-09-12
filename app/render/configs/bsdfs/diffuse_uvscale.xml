@@ -1,0 +1,9 @@
+<bsdf type="diffuse">
+    <boolean name="ensureEnergyConservation" value="false"/>
+    <texture name="reflectance" type="bitmap">
+        <string name="filename" value="$texture"/>
+
+        <float name="uscale" value="$uvscale"/>
+        <float name="vscale" value="$uvscale"/>
+    </texture>
+</bsdf>

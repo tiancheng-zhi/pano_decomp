@@ -1,0 +1,48 @@
+<scene version="0.6.0">
+    <sensor type="spherical">
+        <sampler type="ldsampler">
+            <integer name="sampleCount" value="1"/>
+        </sampler>
+        <film type="hdrfilm">
+            <integer name="width" value="512"/>
+            <integer name="height" value="256"/>
+            <boolean name="banner" value="false"/>
+            <rfilter type="box"/>
+        </film>
+        <transform name="toWorld">
+            <scale x="-1" y="-1"/>
+            <rotate x="1" angle="-90"/>
+        </transform>
+    </sensor>
+    <integrator type="multichannel">
+        <integrator type="field">
+            <string name="field" value="shapeIndex"/>
+            <float name="undefined" value="2"/>
+        </integrator>
+    </integrator>
+    <shape type="obj">
+        <string name="filename" value="../data/zind/scenes/floormesh/sample/sample+010+floor_01+pano_039/geo_wall.obj"/>
+        <transform name="toWorld">
+            <scale z="1"/>
+            <translate x="0" y="0" z="-1.6"/>
+            <rotate z="1" angle="180"/>
+        </transform>
+    </shape>
+    <shape type="obj">
+        <string name="filename" value="../data/zind/scenes/floormesh/sample/sample+010+floor_01+pano_039/geo_floor.obj"/>
+        <transform name="toWorld">
+            <scale z="1"/>
+            <translate x="0" y="0" z="-1.6"/>
+            <rotate z="1" angle="180"/>
+        </transform>
+    </shape>
+    <shape type="obj">
+        <string name="filename" value="../data/zind/scenes/floormesh/sample/sample+010+floor_01+pano_039/geo_ceiling.obj"/>
+        <transform name="toWorld">
+            <scale z="1"/>
+            <translate x="0" y="0" z="-1.6"/>
+            <rotate z="1" angle="180"/>
+        </transform>
+    </shape>
+</scene>
+

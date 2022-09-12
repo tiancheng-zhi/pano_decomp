@@ -1,0 +1,11 @@
+<!--<transform name="toWorld">-->
+<!--    <scale z="1" />-->
+<!--    <translate x="0" y="0" z="0" />-->
+<!--    <rotate z="1" angle="180" />-->
+<!--</transform>-->
+<transform name="toWorld">
+            <scale value="0.2"/>
+            <scale z="1"/>
+            <translate x="-0.6" y="-0.2" z="-1.5"/>
+            <rotate z="1" angle="180"/>
+</transform>

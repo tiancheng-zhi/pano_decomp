@@ -61,9 +61,19 @@ python train_effects.py
 python infer_effects.py --test-lists ../lists/zind_panos_${SPLIT}.txt --log ../data/zind/scenes/eff/${SPLIT} --ckpt ${MODEL_PATH}
 ```
 
-## Coming Soon
-- Lighting effects removal
-- Applications
+## Lighting Effects Removal
+1. Train specular removal network: Under [`decomp`](decomp) folder, run:
+```
+python train_diff.py
+```
+2. Infer specular removal network: Under [`decomp`](decomp) folder, run:
+```
+python infer_diff.py --test-lists ../lists/zind_panos_${SPLIT}.txt --log ../data/zind/scenes/diff/${SPLIT} --ckpt ${MODEL_PATH}
+```
+3. Due to license issues, we cannot redistribute the modified version of [SESAME](https://github.com/vglsd/OpenSESAME) for sunlight removal.
+
+## Applications
+Please see [`app`](app) folder.
 
 ## Disclaimer
 The result produced by this code might be slightly different from the result in the paper, because in this code:
